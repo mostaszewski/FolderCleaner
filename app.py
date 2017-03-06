@@ -25,7 +25,6 @@ def clean(paths):
                 destination = join(path, "No extension")
             else:
                 destination = join(path, extension.replace('.', ''))
-
             makedirs(destination, exist_ok=True)
             move(source, destination)
             print("Copying {} to {}.".format(source, destination))
