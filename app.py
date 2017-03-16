@@ -8,9 +8,11 @@ from os.path import isfile, join, splitext
 from shutil import move
 from sys import argv
 
+
 def get_files(path):
     """ Returns list of files in the specified directory """
     return [file for file in listdir(path) if isfile(join(path, file))]
+
 
 def clean(paths):
     """
